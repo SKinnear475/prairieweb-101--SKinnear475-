@@ -1,4 +1,4 @@
-/* Basic setup */
+/* ---------- Basic setup ---------- */
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
   background-color: #ffffff;
 }
 
-/* Header and navigation */
+/* ---------- Header and navigation ---------- */
 
 .header {
   background-color: #2f5d3a;
@@ -52,7 +52,7 @@ body {
   text-decoration: underline;
 }
 
-/* Page title */
+/* ---------- Page title ---------- */
 
 .page-title {
   margin: 0;
@@ -62,7 +62,7 @@ body {
   font-size: 1.75rem;
 }
 
-/* Sections */
+/* ---------- Sections ---------- */
 
 section {
   max-width: 900px;
@@ -74,7 +74,7 @@ h2 {
   margin-top: 0;
 }
 
-/* Trails */
+/* ---------- Trails ---------- */
 
 .trail {
   border: 1px solid #cccccc;
@@ -93,7 +93,7 @@ h2 {
   color: #2f5d3a;
 }
 
-/* Contact form */
+/* ---------- Contact form ---------- */
 
 form {
   display: flex;
@@ -128,7 +128,7 @@ button:hover {
   background-color: #1f3f27;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 
 .footer {
   padding: 15px;
@@ -141,7 +141,8 @@ button:hover {
   margin: 0;
 }
 
-/* Media query 1: tablets (768px and up) */
+/* ---------- Media query 1: tablets (768px and up) ---------- */
+
 @media (min-width: 768px) {
   .brand {
     font-size: 2rem;
@@ -167,7 +168,8 @@ button:hover {
   }
 }
 
-/* Media query 2: desktops (992px and up) */
+/* ---------- Media query 2: desktops (992px and up) ---------- */
+
 @media (min-width: 992px) {
   /* Brand on the left, nav on the right */
   .header {
@@ -184,5 +186,72 @@ button:hover {
 
   section {
     padding: 50px 15px;
+  }
+}
+
+/* Assessment 2 additions */
+
+/* Red "(required)" marker next to the labels */
+.required {
+  color: #b00020;
+  font-weight: normal;
+}
+
+/* Dropdown looks like the other fields */
+select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #888888;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Thank-you message shown after the form is sent */
+.form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2f5d3a;
+}
+
+/* Assessment 3 additions */
+
+/* Hero image scales to the screen width, but never wider than 900px */
+.hero img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Map: full width, taller on bigger screens */
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+/* Weather box */
+.weather {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: #f4f1e6;
+}
+
+.weather h3 {
+  margin-top: 0;
+}
+
+.weather p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .map-wrapper iframe {
+    height: 400px;
   }
 }
